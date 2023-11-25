@@ -27,4 +27,6 @@ python Features/ReduceFeaturesPCA.py --soccernet_dirpath /path/to/SoccerNet/
 
 ```bash
 python Features/VideoFeatureExtractor.py --path_video <PATH_INPUT_VIDEO> --path_features <PATH_OUTPUT_FEATURES> [--start <START_TIME_SECOND> --duration <DURATION_SECOND> --overwrite --PCA "Features/pca_512_TF2.pkl" --PCA_scaler "Features/average_512_TF2.pkl"]
+python Features/VideoFeatureExtractor.py --path_video Download/data/test/trimmed_1_HQ.mp4 --path_features Features/custom/1_pca_512_TF2.npy --overwrite
+python Features/VideoFeatureExtractor.py --path_video Download/data/test/trimmed_2_HQ.mp4 --path_features Features/custom/2_pca_512_TF2.npy --overwrite
 ```
